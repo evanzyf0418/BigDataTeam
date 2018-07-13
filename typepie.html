@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>各国电影类型占比</title>
+</head>
+
+<body>
+<div id="china" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('china'));
+option = {
+	 title: {
+		text: '中国大陆电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:1432, name:'剧情'},
+                {value:676, name:'爱情'},
+                {value:53, name:'科幻'},
+                {value:229, name:'惊悚'},
+                {value:668, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+
+</div>
+<br>
+<!-- 香港 -->
+<div id="hk" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('hk'));
+option = {
+	 title: {
+		text: '香港电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:1187, name:'剧情'},
+                {value:575, name:'爱情'},
+                {value:38, name:'科幻'},
+                {value:294, name:'惊悚'},
+                {value:928, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>
+    <br>
+<!-- 日本 -->
+<div id="jp" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('jp'));
+option = {
+	 title: {
+		text: '日本电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:2215, name:'剧情'},
+                {value:457, name:'爱情'},
+                {value:384, name:'科幻'},
+                {value:314, name:'惊悚'},
+                {value:654, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>
+ <!-- 韩国 -->
+<div id="kr" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('kr'));
+option = {
+	 title: {
+		text: '韩国电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:709, name:'剧情'},
+                {value:394, name:'爱情'},
+                {value:23, name:'科幻'},
+                {value:156, name:'惊悚'},
+                {value:357, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>
+ <!-- 美国 -->
+<div id="us" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('us'));
+option = {
+	 title: {
+		text: '美国电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:4566, name:'剧情'},
+                {value:1946, name:'爱情'},
+                {value:1036, name:'科幻'},
+                {value:2453, name:'惊悚'},
+                {value:3754, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>    
+ 
+ <!-- 英国 -->
+<div id="uk" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('uk'));
+option = {
+	 title: {
+		text: '英国电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:1496, name:'剧情'},
+                {value:522, name:'爱情'},
+                {value:202, name:'科幻'},
+                {value:554, name:'惊悚'},
+                {value:609, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>  
+</body>
+</html>

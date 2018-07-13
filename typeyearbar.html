@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>类型与投票人数柱状图</title>
+</head>
+
+<body>
+<div id="main" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('main'));
+option = {
+	title: {
+		text: '1900-2020年电影类型与投票人数柱状图',
+		left: 'center',
+        top: 'top'
+    },
+	toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+		top:'7%',
+		left:'left',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            data : ['1900-1920','1920-1940','1940-1960','1960-1980','1980-2000','2000-2020']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'剧情',
+            type:'bar',
+            data:[11372, 730179, 2097087,3660008, 28649332, 96266115]
+        },
+        {
+            name:'爱情',
+            type:'bar',
+           
+            data:[7852, 623864, 1175814,1203113, 14897867, 468686692]
+        },
+        {
+            name:'科幻',
+            type:'bar',
+            
+            data:[12035, 21005, 19836,511114, 3627132, 21942500]
+        },
+        {
+            name:'惊悚',
+            type:'bar',
+            
+            data:[230, 40580, 299097,522953, 7714461, 31953482]
+        },
+        {
+            name:'喜剧',
+            type:'bar',
+            data:[22976, 301981, 744042,1144466, 12685556, 54224910],
+            
+        },
+    ]
+};
+
+myChart.setOption(option);
+
+	</script>
+
+</div>
+<br>
+
+</body>
+</html>

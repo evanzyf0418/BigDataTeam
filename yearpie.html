@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>各年代电影类型占比</title>
+</head>
+
+<body>
+<div id="china" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('china'));
+option = {
+	 title: {
+		text: '1900—1920年电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:35, name:'剧情'},
+                {value:8, name:'爱情'},
+                {value:3, name:'科幻'},
+                {value:2, name:'惊悚'},
+                {value:102, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+
+</div>
+<br>
+<!-- 1920—1940年 -->
+<div id="hk" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('hk'));
+option = {
+	 title: {
+		text: '1920—1940年电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:320, name:'剧情'},
+                {value:195, name:'爱情'},
+                {value:15, name:'科幻'},
+                {value:40, name:'惊悚'},
+                {value:220, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>
+    <br>
+<!-- 1940—1960 -->
+<div id="jp" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('jp'));
+option = {
+	 title: {
+		text: '1940—1960年电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:922, name:'剧情'},
+                {value:364, name:'爱情'},
+                {value:37, name:'科幻'},
+                {value:211, name:'惊悚'},
+                {value:380, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>
+ <!-- 1960—1980 -->
+<div id="kr" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('kr'));
+option = {
+	 title: {
+		text: '1960—1980年电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:1818, name:'剧情'},
+                {value:481, name:'爱情'},
+                {value:142, name:'科幻'},
+                {value:383, name:'惊悚'},
+                {value:692, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>
+ <!-- 1980—2000 -->
+<div id="us" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('us'));
+option = {
+	 title: {
+		text: '1980—2000年电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:3590, name:'剧情'},
+                {value:1367, name:'爱情'},
+                {value:527, name:'科幻'},
+                {value:1106, name:'惊悚'},
+                {value:2189, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>    
+ 
+ <!-- 2000—2020 -->
+<div id="uk" style="width:800px;height:400px;">
+<script src="echarts.js"></script>
+<script>
+var myChart = echarts.init(document.getElementById('uk'));
+option = {
+	 title: {
+		text: '2000—2020年电影类型占比',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+		top: '13%',
+		left: '10%',
+        data:['剧情','爱情','科幻','惊悚','喜剧']
+    },
+    series: [
+        {
+            name:'电影类型',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:9306, name:'剧情'},
+                {value:3414, name:'爱情'},
+                {value:1140, name:'科幻'},
+                {value:2930, name:'惊悚'},
+                {value:5281, name:'喜剧'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option);
+
+	</script>
+    </div>  
+</body>
+</html>

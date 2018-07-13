@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>产地与类型数据分析</title>
+</head>
+
+<body>
+<div id="plot" style="width:1340px;height:600px;">
+<script src="echarts.js"></script>
+<script src="world.js"></script>
+<script>
+	var myChart = echarts.init(document.getElementById('plot'));
+		option = {
+    title: {
+		text: '剧情类型电影产地分布',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    visualMap: {
+        min: 500,
+        max: 5000,
+        text:['高','低'],
+        realtime: false,
+        calculable: true,
+        color: ['orangered','yellow','lightskyblue']
+    },
+    series: [
+        {
+            name: '剧情类型电影产地分布',
+            type: 'map',
+            mapType: 'world',
+            roam: true,
+            itemStyle:{
+                emphasis:{label:{show:true}}
+            },
+            data:[
+                
+                {name: 'China', value: 2619},
+				{name: 'Japan', value: 2215},
+				{name: 'Korea', value: 709},
+				{name: 'United States', value: 4566},
+                {name: 'United Kingdom', value: 1496},
+                
+            ]
+        }
+    ]
+};
+ myChart.setOption(option);
+
+	</script>
+
+</div>
+<br>
+<!--爱情 -->
+<div id="love" style="width:1340px;height:600px;">
+<script src="echarts.js"></script>
+<script src="world.js"></script>
+<script>
+	var myChart = echarts.init(document.getElementById('love'));
+		option = {
+    title: {
+		text: '爱情类型电影产地分布',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    visualMap: {
+        min: 350,
+        max: 2000,
+        text:['高','低'],
+        realtime: false,
+        calculable: true,
+        color: ['orangered','yellow','lightskyblue']
+    },
+    series: [
+        {
+            name: '爱情类型电影产地分布',
+            type: 'map',
+            mapType: 'world',
+            roam: true,
+            itemStyle:{
+                emphasis:{label:{show:true}}
+            },
+            data:[
+                
+                {name: 'China', value: 1251},
+				{name: 'Japan', value: 457},
+				{name: 'Korea', value: 394},
+				{name: 'United States', value: 1946},
+                {name: 'United Kingdom', value: 522},
+                
+            ]
+        }
+    ]
+};
+ myChart.setOption(option);
+
+	</script>
+
+</div>
+<br>
+<!--科幻 -->
+<div id="fiction" style="width:1340px;height:600px;">
+<script src="echarts.js"></script>
+<script src="world.js"></script>
+<script>
+	var myChart = echarts.init(document.getElementById('fiction'));
+		option = {
+    title: {
+		text: '科幻类型电影产地分布',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    visualMap: {
+        min: 0,
+        max: 1100,
+        text:['高','低'],
+        realtime: false,
+        calculable: true,
+        color: ['orangered','yellow','lightskyblue']
+    },
+    series: [
+        {
+            name: '科幻类型电影产地分布',
+            type: 'map',
+            mapType: 'world',
+            roam: true,
+            itemStyle:{
+                emphasis:{label:{show:true}}
+            },
+            data:[
+                
+                {name: 'China', value: 91},
+				{name: 'Japan', value: 384},
+				{name: 'Korea', value: 23},
+				{name: 'United States', value: 1036},
+                {name: 'United Kingdom', value: 202},
+                
+            ]
+        }
+    ]
+};
+ myChart.setOption(option);
+
+	</script>
+
+</div>
+<br>
+<!--惊悚 -->
+<div id="thriller" style="width:1340px;height:600px;">
+<script src="echarts.js"></script>
+<script src="world.js"></script>
+<script>
+	var myChart = echarts.init(document.getElementById('thriller'));
+		option = {
+    title: {
+		text: '惊悚类型电影产地分布',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    visualMap: {
+        min: 100,
+        max: 2500,
+        text:['高','低'],
+        realtime: false,
+        calculable: true,
+        color: ['orangered','yellow','lightskyblue']
+    },
+    series: [
+        {
+            name: '惊悚类型电影产地分布',
+            type: 'map',
+            mapType: 'world',
+            roam: true,
+            itemStyle:{
+                emphasis:{label:{show:true}}
+            },
+            data:[
+                
+                {name: 'China', value: 523},
+				{name: 'Japan', value: 314},
+				{name: 'Korea', value: 156},
+				{name: 'United States', value: 2453},
+                {name: 'United Kingdom', value: 554},
+                
+            ]
+        }
+    ]
+};
+ myChart.setOption(option);
+
+	</script>
+
+</div>
+<br>
+<!--喜剧 -->
+<div id="comedy" style="width:1340px;height:600px;">
+<script src="echarts.js"></script>
+<script src="world.js"></script>
+<script>
+	var myChart = echarts.init(document.getElementById('comedy'));
+		option = {
+    title: {
+		text: '喜剧类型电影产地分布',
+		left: 'center',
+        top: 'top'
+    },
+    toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+    visualMap: {
+        min: 300,
+        max: 4000,
+        text:['高','低'],
+        realtime: false,
+        calculable: true,
+        color: ['orangered','yellow','lightskyblue']
+    },
+    series: [
+        {
+            name: '喜剧类型电影产地分布',
+            type: 'map',
+            mapType: 'world',
+            roam: true,
+            itemStyle:{
+                emphasis:{label:{show:true}}
+            },
+            data:[
+                
+                {name: 'China', value: 1596},
+				{name: 'Japan', value: 654},
+				{name: 'Korea', value: 357},
+				{name: 'United States', value: 3754},
+                {name: 'United Kingdom', value: 3178},
+                
+            ]
+        }
+    ]
+};
+ myChart.setOption(option);
+
+	</script>
+
+</div>
+</body>
+</html>
